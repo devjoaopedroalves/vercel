@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/style.css" rel="stylesheet">
+    <link href="/styles/fonts.css" rel="stylesheet">
+    <link href="/styles/media.css" rel="stylesheet">
+    <title>Landing Page</title>
+    <style>
+        body {
+            margin-bottom: 160px; /* Ajuste para acomodar a barra do Spotify */
+            background-color: rgb(34, 34, 34);
+            color: white;
+            font-family: poppinsregular;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        #title {
+            line-height: 10px;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(132, 14, 201);
+            transition: 0.3s all;
+        }
+
+        #inscreva-se-btn {
+            border: 2px solid rgb(132, 14, 201);
+            padding: 10px;
+            border-radius: 15px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        #inscreva-se-btn:hover {
+            background-color: rgb(132, 14, 201);
+            color: white;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            align-items: center;
+        }
+
+        h2 {
+            font-size: 36px;
+            line-height: 40px;
+            font-family: poppinsmedium;
+        }
+
+        span {
+            color: rgb(132, 14, 201);
+        }
+
+        p {
+            line-height: 20px;
+            max-width: 100%;
+            font-family: poppinslight;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            box-shadow: 10px 8px 10px 5px purple;
+        }
+
+        form {
+            width: 100%;
+        }
+
+        form [type="submit"] {
+            height: 50px;
+            width: 100%;
+            background-color: rgb(132, 14, 201);
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        form [type="submit"]:hover {
+            cursor: pointer;
+        }
+
+        input {
+            margin-top: 10px;
+            width: 100%;
+            padding: 15px;
+            border-radius: 20px;
+            border: none;
+            font-size: 15px;
+        }
+
+        /* Add any additional styles for mobile devices here */
+
+        @media only screen and (max-width: 600px) {
+            body {
+                margin-bottom: 260px;
+            }
+
+            header {
+                margin-bottom: 20px;
+            }
+
+            ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            li {
+                margin: 10px 0;
+            }
+
+            #inscreva-se-btn {
+                margin: 20px auto;
+            }
+
+            main {
+                margin-top: 10px;
+            }
+
+            h2 {
+                font-size: 24px;
+                line-height: 30px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="title">
+            <h1>Eu te amo bibi</h1>
+        </div>
+
+        <ul>
+            <a href="#">
+                <li>Eu</li>
+            </a>
+            <a href="#">
+                <li>Te</li>
+            </a>
+            <a href="#">
+                <li>Amo</li>
+            </a>
+            <a href="#">
+                <li>Muito</li>
+            </a>
+            <a href="#" id="inscreva-se-btn">
+                <li>Você me ama?</li>
+            </a>
+        </ul>
+    </header>
+
+    <main>
+        <h2><span>Como não se</span> apaixonar por você</h2>
+        <p>
+            Você foi de longe a melhor coisa que me aconteceu!
+            Não há medida para o tamanho desse sentimento, e as palavras, por mais eloquentes que sejam, parecem insuficientes diante da grandiosidade desse amor. No entanto, é com humildade e gratidão que reconheço a dádiva de amar e ser amado por você, pois no intricado tecido do nosso vínculo, descubro a verdadeira essência da vida.
+        </p>
+        <form>
+            <h3>Que se casar comigo?<br>Preencha o formulário abaixo</h3>
+            <input type="text" placeholder="Nome">
+            <input type="submit" value="Enviar">
+        </form>
+
+        <article>
+            <img src="./components/images/3-red.jpeg" alt="mulher-roxa">
+            <img src="./components/images/1.jpeg" alt="outra-imagem">
+        </article>
+    </main>
+
+    <!-- Barra do Spotify -->
+    <div id="spotify-bar" style="background-color: rgb(132, 14, 201); position: fixed; bottom: 0; left: 0; width: 100%;">
+        <iframe style="border-radius: 10px" src="https://open.spotify.com/embed/track/04h9o3gtRD7fvGafF7ukJj?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+</body>
+
+</html>
